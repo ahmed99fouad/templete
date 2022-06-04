@@ -1,0 +1,40 @@
+%w-f {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+%h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+%span {
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: $pcolor;
+    margin: 1rem auto;
+}
+
+%p {
+    margin: 1rem 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+%button {
+    border-radius: 90px;
+    background: $pcolor;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include trans;
+    &:hover {
+        color: $pcolor;
+        background: #fff;
+    }
+}

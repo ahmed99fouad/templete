@@ -1,0 +1,24 @@
+// @import "mixin";
+// @include xs {}
+@include sm {
+    header {
+        text-align: center;
+        position: static;
+        .logo {
+            float: none;
+            width: 100%;
+        }
+        ul {
+            float: none;
+            width: 100%;
+            display: block;
+        }
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}
+
+// @include md {}
+// @include lg {}
