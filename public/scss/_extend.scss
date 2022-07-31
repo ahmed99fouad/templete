@@ -1,0 +1,65 @@
+%w-f {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+%soc {
+    padding-top: 10px;
+    // padding-right: 20px;
+    width: 50px;
+    height: 60px;
+    background-color: #383535;
+    justify-content: center;
+    text-align: center;
+    // text-align: center;
+    position: static;
+    // position: relative;
+    @include trans;
+    &:hover {
+        color: #fff;
+        background: rgb(55, 55, 224);
+    }
+}
+
+%foot {
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    color: #ccc;
+}
+
+%h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+%span {
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: $pcolor;
+    margin: 1rem auto;
+}
+
+%p {
+    margin: 1rem 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+%button {
+    border-radius: 90px;
+    background: $pcolor;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include trans;
+    &:hover {
+        color: $pcolor;
+        background: #fff;
+    }
+}

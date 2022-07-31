@@ -1,0 +1,439 @@
+@import "mixin";
+@include xs {
+    header {
+        text-align: center;
+        position: static;
+        .logo {
+            float: none;
+            width: 100%;
+        }
+        ul {
+            float: none;
+            width: 100%;
+            display: block;
+        }
+    }
+    .Home {
+        background-image: url(../dist/img/compound/c0.jpg) no-repeat center center fixed;
+        height: 100vh;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        color: #e0826d;
+        background-size: 100% 100%;
+        image-resolution: 300dpi;
+        &::before {
+            content: "";
+            background-size: cover;
+            background-color: #363535;
+            // background-image: url("../dist/img/cons.jpg");
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+        }
+        .Home-contant {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // background-color: #a73333;
+            h1 {
+                font-size: 0.5rem;
+                font-weight: bolder;
+                color: white;
+                font-size: 50px;
+                font-style: italic;
+            }
+        }
+    }
+    .Contacts {
+        size: 15px;
+    }
+    ////////////projects
+    .Projects {
+        text-align: center;
+        // position: static;
+        width: 100%;
+        float: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        .Proj {
+            float: none;
+            width: 100%;
+        }
+        .projimg {
+            float: none;
+            align-items: center;
+            justify-content: center;
+            .one {
+                position: absolute;
+                width: 340px;
+                height: 270px;
+                align-items: center;
+                justify-content: center;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+        }
+    }
+    .Projects {
+        @include oop;
+    }
+    .duration {
+        .service-chiled {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 15px;
+            margin: 1.5rem 0;
+        }
+    }
+    ////////////////////aboutcontaner
+    .aboutcontaner {
+        @include oop;
+    }
+    section {
+        @include oop;
+    }
+    //////////mission
+    .mission {
+        @include oop;
+    }
+    .aboutcont {
+        @include oop;
+    }
+    .map {
+        @include oop;
+        display: block;
+    }
+}
+
+@include sm {
+    header {
+        text-align: center;
+        position: static;
+        .logo {
+            float: none;
+            width: 100%;
+        }
+        ul {
+            float: none;
+            width: 100%;
+            display: block;
+        }
+    }
+    .Home {
+        background-image: url(../dist/img/compound/c0.jpg) no-repeat center center fixed;
+        height: 100vh;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        color: #e0826d;
+        background-size: 100% 100%;
+        image-resolution: 300dpi;
+        &::before {
+            content: "";
+            background-size: cover;
+            background-color: #363535;
+            // background-image: url("../dist/img/cons.jpg");
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+        }
+        .Home-contant {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // background-color: #a73333;
+            h1 {
+                font-size: 1rem;
+                color: #fff;
+                font-weight: bolder;
+                font-size: 50px;
+                font-style: italic;
+            }
+        }
+    }
+    .Contacts {
+        size: 15px;
+    }
+    ////////////projects
+    .Projects {
+        text-align: center;
+        // position: static;
+        width: 100%;
+        float: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        .Proj {
+            float: none;
+            width: 100%;
+        }
+        .projimg {
+            float: none;
+            align-items: center;
+            justify-content: center;
+            .one {
+                position: absolute;
+                width: 258px;
+                height: 320px;
+                align-items: center;
+                justify-content: center;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+        }
+    }
+    .Projects {
+        @include oop;
+    }
+    .duration {
+        .service-chiled {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            margin: 1.5rem 0;
+        }
+    }
+    ////////////////////aboutcontaner
+    .aboutcontaner {
+        @include oop;
+    }
+    section {
+        @include oop;
+    }
+    //////////mission
+    .mission {
+        @include oop;
+    }
+    .map {
+        @include oop;
+        display: block;
+    }
+}
+
+@include md {
+    header {
+        text-align: center;
+        position: static;
+        .logo {
+            float: none;
+            width: 100%;
+        }
+        ul {
+            float: none;
+            width: 100%;
+            display: block;
+        }
+    }
+    .Home {
+        background-image: url(../dist/img/compound/c0.jpg) no-repeat center center fixed;
+        height: 100vh;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        color: #e0826d;
+        background-size: 100% 100%;
+        image-resolution: 300dpi;
+        &::before {
+            content: "";
+            background-size: cover;
+            background-color: #363535;
+            // background-image: url("../dist/img/cons.jpg");
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+        }
+        .Home-contant {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // background-color: #a73333;
+            h1 {
+                font-size: 1.5rem;
+                color: #fff;
+                font-weight: bolder;
+                font-size: 50px;
+                font-style: italic;
+            }
+        }
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .Contacts {
+        size: 15px;
+    }
+    ////////////projects
+    .Projects {
+        text-align: center;
+        // position: static;
+        width: 100%;
+        float: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        .Proj {
+            float: none;
+            width: 100%;
+        }
+        .projimg {
+            float: none;
+            align-items: center;
+            justify-content: center;
+            .one {
+                position: absolute;
+                width: 340px;
+                height: 100px;
+                align-items: center;
+                justify-content: center;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+        }
+    }
+    ////////////////////aboutcontaner
+    .aboutcontaner {
+        @include oop;
+    }
+    section {
+        @include oop;
+    }
+    //////////mission
+    .mission {
+        @include oop;
+    }
+    .duration {
+        .service-chiled {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            margin: 1.5rem 0;
+        }
+    }
+    .aboutcont {
+        @include oop;
+    }
+    .map {
+        @include oop;
+        display: block;
+    }
+}
+
+@include lg {
+    header {
+        text-align: center;
+        position: static;
+        .logo {
+            float: none;
+            width: 100%;
+        }
+        ul {
+            float: none;
+            width: 100%;
+            display: block;
+        }
+    }
+    .Home {
+        background-image: url(../dist/img/compound/c0.jpg) no-repeat center center fixed;
+        height: 100vh;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        color: #e0826d;
+        background-size: 100% 100%;
+        image-resolution: 300dpi;
+        &::before {
+            content: "";
+            background-size: cover;
+            background-color: #363535;
+            // background-image: url("../dist/img/cons.jpg");
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+        }
+        .Home-contant {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // background-color: #a73333;
+            h1 {
+                font-size: 1.5rem;
+                color: #fff;
+                font-weight: bolder;
+                color: white;
+                font-size: 50px;
+                font-style: italic;
+            }
+        }
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    ////////////projects
+    .Projects {
+        text-align: center;
+        // position: static;
+        width: 100%;
+        float: none;
+        display: block;
+        .Proj {
+            float: none;
+            width: 100%;
+        }
+        .projimg {
+            float: none;
+            align-items: center;
+            justify-content: center;
+            .one {
+                position: absolute;
+                width: 300px;
+                height: 300px;
+                align-items: center;
+                justify-content: center;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+        }
+    }
+    ////////////////////aboutcontaner
+    .aboutcontaner {
+        @include oop;
+    }
+    section {
+        @include oop;
+    }
+    //////////mission
+    .mission {
+        @include oop;
+    }
+    .aboutcont {
+        @include oop;
+    }
+    .duration {
+        @include oop;
+        display: block;
+    }
+    .map {
+        @include oop;
+        display: block;
+    }
+}
